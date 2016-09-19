@@ -38,6 +38,14 @@ public class Model {
         return number;
     }
 
+    public boolean isWon(int insertNumber){
+        if ( insertNumber == number ) {
+            return  true;
+        }
+
+        return false;
+    }
+
     public void changeRange(int insertNumber, int leftRange, int rightRange) {
         if (insertNumber > leftRange && insertNumber < rightRange) {
             if (insertNumber > this.number ) {

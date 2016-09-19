@@ -71,7 +71,7 @@ public class Controller {
         insertNumber = scanNumber();
 
         if ( checkInsert(insertNumber) ){
-            if (insertNumber == model.getNumber()) {
+            if (model.isWon(insertNumber)) {
                 view.print(view.CONGRATULATIONS);
                 view.print(view.YOU_WON, model.attempts.size(), view.ATTEMPTS);
                 win = true;
